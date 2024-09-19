@@ -1,0 +1,118 @@
+.container {
+  position: relative;
+  padding-top: 30px;
+  display: flex;
+  flex-direction: row;
+  gap: 81px;
+  width: max-content;
+
+  @media screen and (max-width: 1300px) {
+    flex-direction: column;
+  }
+
+  @media screen and (max-width: 900px) {
+    gap: 17px;
+    padding-top: 0;
+  }
+}
+
+.border {
+  position: absolute;
+  background: rgba(255, 53, 53, 1);
+  width: 140px;
+  height: 2px;
+  top: 0;
+  left: 0;
+
+  @media screen and (max-width: 900px) {
+    display: none;
+  }
+}
+
+.title {
+  position: relative;
+  font-weight: 400;
+  font-size: 32px;
+  color: var(--black);
+
+  @media screen and (max-width: 900px) {
+    font-weight: 300;
+    transition: 0.3s background;
+    font-size: 18px;
+    color: rgba(38, 38, 38, 1);
+    width: 345px;
+    height: 51px;
+    display: flex;
+    // justify-content: center;
+    gap: 27px;
+    align-items: center;
+    background: rgba(247, 247, 247, 1);
+  }
+}
+
+.title_expanded {
+  @media screen and (max-width: 900px) {
+    background: rgba(255, 53, 53, 1);
+    color: white;
+  }
+}
+
+.body {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  max-width: 353px;
+
+  @media screen and (max-width: 900px) {
+    max-height: 0;
+    overflow: hidden;
+  }
+}
+
+.body_expanded {
+  @media screen and (max-width: 900px) {
+    max-height: max-content;
+    height: 100%;
+    overflow: hidden;
+  }
+}
+
+.bodyItem {
+  position: relative;
+  //   border: 2px solid orange;
+  height: max-content;
+  display: grid;
+  align-items: flex-start;
+  grid-template-columns: max-content 1fr;
+  gap: 15px;
+}
+
+.bodyItemDot {
+  position: relative;
+  border-radius: 50%;
+  background: rgba(255, 53, 53, 1);
+  width: 5px;
+  margin-top: 5px;
+  height: 5px;
+}
+
+.bodyItemText {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19.2px;
+
+  @media screen and (max-width: 900px) {
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 19.5px;
+  }
+}
+
+.img {
+  position: relative;
+  width: 18px;
+  height: 18px;
+  margin-left: 24px;
+}

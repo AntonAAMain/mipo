@@ -1,0 +1,60 @@
+.container {
+  position: relative;
+  width: 628px;
+  height: 293px;
+  background: rgba(255, 53, 53, 1);
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding-top: 56px;
+  padding-left: 71px;
+
+  @media screen and (max-width: 900px) {
+    flex-direction: column;
+    width: 345px;
+    height: 231px;
+    padding-top: 31px;
+    padding-left: 17px;
+  }
+}
+
+.title {
+  position: relative;
+  font-weight: 700;
+  color: white;
+  font-size: 36px;
+  line-height: 43px;
+
+  @media screen and (max-width: 900px) {
+    font-size: 25px;
+  }
+}
+
+.description {
+  position: relative;
+  font-weight: 300;
+  font-size: 20px;
+  color: white;
+  line-height: 26px;
+  width: 450px;
+
+  @media screen and (max-width: 900px) {
+    font-weight: 300;
+    font-size: 20px;
+    width: 300px;
+  }
+}
+
+.whiteAngle {
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: rotate(-90deg);
+}
+
+.redAngle {
+  position: absolute;
+  top: 0;
+  transform: rotate(90deg);
+  right: 0;
+}

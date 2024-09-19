@@ -1,0 +1,73 @@
+.container {
+  position: relative;
+  width: 628px;
+  height: 293px;
+  background: rgba(45, 44, 42, 1);
+  padding-top: 52px;
+  padding-left: 57px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+
+  @media screen and (max-width: 900px) {
+    width: 345px;
+    height: 342px;
+    padding-top: 31px;
+    padding-left: 23px;
+    gap: 22px;
+  }
+}
+
+.title {
+  position: relative;
+  font-size: 36px;
+  color: white;
+  font-weight: 700;
+  line-height: 46.8px;
+
+  @media screen and (max-width: 900px) {
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 30px;
+  }
+}
+
+.text {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.paragraph {
+  position: relative;
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  width: 550px;
+  gap: 15px;
+}
+
+.paragraphDot {
+  position: relative;
+  background: rgba(255, 53, 53, 1);
+  border-radius: 50%;
+  position: relative;
+  width: 5px;
+  height: 5px;
+  margin-top: 10px;
+}
+
+.paragraphText {
+  position: relative;
+  color: white;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 28px;
+
+  @media screen and (max-width: 900px) {
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 26px;
+    width: 300px;
+  }
+}
