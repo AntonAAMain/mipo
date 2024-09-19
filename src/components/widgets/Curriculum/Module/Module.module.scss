@@ -43,7 +43,7 @@
     width: 345px;
     height: 51px;
     display: flex;
-    // justify-content: center;
+    cursor: pointer;
     gap: 27px;
     align-items: center;
     background: rgba(247, 247, 247, 1);
@@ -115,4 +115,8 @@
   width: 18px;
   height: 18px;
   margin-left: 24px;
+
+  @media screen and (min-width: 900px) {
+    display: none;
+  }
 }
